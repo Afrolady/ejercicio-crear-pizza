@@ -1,0 +1,42 @@
+body
+{
+    background-color: aqua;
+    font-family: "Rubik Pixels";
+}
+
+.harina
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+h1
+{
+    text-align: center;
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+ul{
+    list-style: korean-hanja-formal;
+}
+.pasos
+{
+    align-items: flex-start;
+}
+.titulo-pasos
+{
+    font-size: 25px;
+    border-bottom: 1px solid red;
+    padding: 5px;
+}
+.titulo
+{
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 500;
+    list-style: none;
+}
