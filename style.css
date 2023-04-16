@@ -17,8 +17,7 @@ h1
 ol{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 ul{
     list-style: korean-hanja-formal;
@@ -39,4 +38,28 @@ ul{
     padding: 5px;
     font-weight: 500;
     list-style: none;
+}
+.header-pagine
+{
+    display: flex;
+    justify-content: center;
+}
+.header-pagine img
+{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+}
+img{
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #156d05;
+}
+picture
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
