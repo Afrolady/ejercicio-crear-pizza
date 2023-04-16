@@ -63,3 +63,8 @@ picture
     align-items: center;
     flex-direction: column;
 }
+canvas
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #10140f;
+}
