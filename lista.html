@@ -80,6 +80,33 @@
         width="300"
         height="300"
       />
+      <h1 class="titulo-pasos">!En hora buena, ahora dibuja la pizza!</h1>
+      <canvas width="600" height="500"></canvas>
+      <script>
+        // Con esta variable podemos obtener el canvas
+        var pantalla = document.querySelector("canvas");
+        // creamos un pincel para dibujar en canvas
+        var pincel = pantalla.getContext("2d");
+        // elegimos el color
+        pincel.fillStyle = "Green";
+        // definimos el tamaño del color
+        pincel.fillRect(0,0,600,500);
+
+        function dibujarCirculo(evento) {
+          // capturamos la ubicacion en X donde se hace click
+            var x = evento.pageX - pantalla.offsetLeft;
+          // capturamos la ubicacion en Y donde se hace click
+            var y = evento.pageY - pantalla.offsetTop;
+          // Color del pincel 
+            pincel.fillStyle = "red";
+            // esta funcion le da via libre a donde quiera moverme
+            pincel.beginPath();
+            // funcion para dibujar circulos 
+            pincel.arc(x,y,10,0,2*3.14);
+            pincel.fill();
+        }
+        pantalla.onclick = dibujarCirculo;
+      </script>
     </picture>
     </ol>
   </body>
